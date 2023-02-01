@@ -8,6 +8,7 @@ verbose_ping.DEBUG = True
 ping.EXCEPTIONS = True
 verbose_ping.EXCEPTIONS = True
 
+
 class Lol_ping:
 
     NA = '104.160.131.3'
@@ -79,8 +80,8 @@ class Lol_ping:
                 region = self.OCE
                 print('OCE --> ' + region)
             case 'LAN':
-                region = self.LAN
                 print('LAN --> ' + region)
+                verbose_ping(self.LAN)
             case _:
                 print('No selected region')
 
@@ -94,7 +95,7 @@ if __name__ == "__main__":
     lolping = Lol_ping()
 
     # 1) Test servers
-    # lolping.test_servers()
+    lolping.test_servers()
 
     # 2) Choose a region
     region = lolping.region_selector()
@@ -102,16 +103,12 @@ if __name__ == "__main__":
     # 3) Test selected server
     lolping.ping_servers(region)
 
+
 '''
 IP Provider --> https://www.reddit.com/r/leagueoflegends/comments/4efy17/comment/d20167p/
-
 NA - 104.160.131.3
-
 EUW - 104.160.141.3
-
 EUNE - 104.160.142.3
-
 OCE - 104.160.156.1
-
 LAN - 104.160.136.3
 '''
