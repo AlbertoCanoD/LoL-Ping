@@ -1,11 +1,12 @@
 try:
-    from ping3 import ping
+    from ping3 import ping, verbose_ping
 except:
     print('ping3 not found')
 
 ping.DEBUG = True
+verbose_ping.DEBUG = True
 ping.EXCEPTIONS = True
-
+verbose_ping.EXCEPTIONS = True
 
 class Lol_ping:
 
@@ -83,7 +84,7 @@ class Lol_ping:
             case _:
                 print('No selected region')
 
-        region_ping = ping(region, timeout=1)
+        region_ping = verbose_ping(str(region))
         return print(region_ping)
         # print(ping(region))
 
