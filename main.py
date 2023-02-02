@@ -85,9 +85,8 @@ class Lol_ping:
             case _:
                 print('No selected region')
 
-        region_ping = verbose_ping(str(region))
+        region_ping = verbose_ping(region)
         return print(region_ping)
-        # print(ping(region))
 
 
 if __name__ == "__main__":
@@ -95,7 +94,7 @@ if __name__ == "__main__":
     lolping = Lol_ping()
 
     # 1) Test servers
-    lolping.test_servers()
+    #lolping.test_servers()
 
     # 2) Choose a region
     region = lolping.region_selector()
