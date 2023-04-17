@@ -20,7 +20,7 @@ Courtesy of [Laslow21](https://www.reddit.com/r/leagueoflegends/comments/4efy17/
 
 The app implements three methods:
 
-- test_servers(): Make a ping with timeout=1 to the 5 servers. If server responds to the ping, the green ball appear(🟢), if not, red ball(🔴)
+- test_servers(): Make a ping with timeout=1 to the 5 servers. If server responds to the ping, the green ball appear(🟢), if not, red ball(🔴).
 
 - region_selector():
 

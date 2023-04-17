@@ -68,6 +68,7 @@ class Lol_ping:
 
         match region.upper():
             case 'NA':
+                print(ping(self.NA))
                 region = self.NA
                 print('NA --> ' + region)
             case 'EUW':
